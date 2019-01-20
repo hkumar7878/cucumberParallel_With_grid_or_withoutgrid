@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="tests" thread-count="5">
   <test name="Cucumber Parallel Tests" >
     <classes>
-      <class name="com.cucumber.parallel.cardekho.runners.Runner_newcar_search_feature"/>
+     <!--  <class name="com.cucumber.parallel.cardekho.runners.Runner_newcar_search_feature"/> -->
       <!-- <class name="com.cucumber.parallel.cardekho.runners"/> -->
     </classes>
   </test> 

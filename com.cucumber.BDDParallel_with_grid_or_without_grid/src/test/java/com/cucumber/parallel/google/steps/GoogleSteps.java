@@ -1,17 +1,17 @@
 package com.cucumber.parallel.google.steps;
 
-import java.io.IOException;
+
 
 import org.openqa.selenium.By;
 
 import com.aventstack.extentreports.Status;
+import com.cucumber.grid.utilities.MyScreenRecorder;
 import com.cucumber.parallel.extent.ExtentManager;
 import com.cucumber.parallel.extent.ExtentTestManager;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,8 +23,9 @@ public class GoogleSteps extends BaseSteps{
 	static String scenarioName;
 	static int i=0;
 	@Before
-	public void before(Scenario scenario)
+	public void before(Scenario scenario) throws Exception
 	{
+		MyScreenRecorder.startRecording("navigationTest");
 		i=i+1;
 		this.scenario=scenario;
 		scenarioName=scenario.getName();
@@ -35,7 +36,7 @@ public class GoogleSteps extends BaseSteps{
 	}
 	
 	@After
-	public void after(Scenario scenario) throws IOException
+	public void after(Scenario scenario) throws Exception
 	{
 		if(scenario.isFailed())
 		{
@@ -49,7 +50,7 @@ public class GoogleSteps extends BaseSteps{
 			
 		}
 		ExtentManager.getReporter().flush();
-		
+		MyScreenRecorder.stopRecording();
 		quitWebDriver();
 	}
 	

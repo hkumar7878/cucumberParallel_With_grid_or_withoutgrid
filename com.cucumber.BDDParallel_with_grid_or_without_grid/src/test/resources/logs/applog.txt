@@ -1,4 +1,2 @@
-INFO    2018-12-20 10:39:57,482 [TestNG] devpinoyLogger  - Firefox browser launched
-INFO    2018-12-20 10:39:57,514 [TestNG] devpinoyLogger  - inside the base class method browser initilization
-INFO    2018-12-20 10:39:59,818 [TestNG] devpinoyLogger  - Chrome browwer launched
-INFO    2018-12-20 10:40:00,968 [TestNG] devpinoyLogger  - inside the base class method browser initilization
+INFO    2019-01-20 17:37:12,422 [TestNG-tests-2] devpinoyLogger  - Chrome browwer launched
+INFO    2019-01-20 17:37:13,606 [TestNG-tests-2] devpinoyLogger  - inside the base class method browser initilization
