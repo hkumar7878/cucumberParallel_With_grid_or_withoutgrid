@@ -1,2 +1,2 @@
-INFO    2019-01-20 17:37:12,422 [TestNG-tests-2] devpinoyLogger  - Chrome browwer launched
-INFO    2019-01-20 17:37:13,606 [TestNG-tests-2] devpinoyLogger  - inside the base class method browser initilization
+INFO    2019-03-19 11:21:51,372 [TestNG] devpinoyLogger  - Chrome browwer launched
+INFO    2019-03-19 11:21:52,591 [TestNG] devpinoyLogger  - inside the base class method browser initilization

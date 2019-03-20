@@ -72,6 +72,8 @@ public class BaseSteps {
 		public void openBrowser(String browserType) {
 				
 				String browser=browserType;
+				
+				
 				if(System.getenv("ExecutionType")!=null && System.getenv("ExecutionType").equalsIgnoreCase("Grid")){
 					gridExecution=true;
 				}

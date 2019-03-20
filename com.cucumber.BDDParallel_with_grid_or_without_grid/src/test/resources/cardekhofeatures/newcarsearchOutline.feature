@@ -2,7 +2,7 @@
 Feature: Validation of Car search page
 
   #@Search-New-Car-Positive
-  Scenario: Verifyinng new car search on cardekho.com for firefox
+  Scenario: Verifying new car search on cardekho.com for firefox
     Given launch browser 'firefox'
     When user navigates to URL 'https://www.cardekho.com/'
     When user move to the menu

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)" parallel="classes">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Cucumber Parallel Tests1(failed)">
     <classes>
-      <class name="com.cucumber.parallel.cardekho.runners.Runner_newcar_search_feature">
+      <class name="com.cucumber.parallel.cardekho.runners.Runner_newcar_outline_search_feature">
         <methods>
           <include name="runCuke"/>
         </methods>
-      </class> <!-- com.cucumber.parallel.cardekho.runners.Runner_newcar_search_feature -->
+      </class> <!-- com.cucumber.parallel.cardekho.runners.Runner_newcar_outline_search_feature -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Cucumber Parallel Tests1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

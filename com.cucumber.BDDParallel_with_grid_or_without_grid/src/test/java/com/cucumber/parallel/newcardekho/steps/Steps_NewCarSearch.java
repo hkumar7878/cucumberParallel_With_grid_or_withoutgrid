@@ -1,16 +1,13 @@
 package com.cucumber.parallel.newcardekho.steps;
 
-import java.io.IOException;
-import java.util.List;
+
 
 import com.aventstack.extentreports.Status;
 import com.cucumber.grid.pages.actions.Action_CarDekhoHomePage;
 import com.cucumber.grid.pages.actions.Action_NewCarSearchPage;
-import com.cucumber.grid.utilities.MyScreenRecorder;
 import com.cucumber.parallel.baseSteps.steps.BaseSteps;
 import com.cucumber.parallel.extent.ExtentManager;
 import com.cucumber.parallel.extent.ExtentTestManager;
-
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -30,7 +27,7 @@ public class Steps_NewCarSearch extends BaseSteps{
 	@Before
 	public void before(Scenario scenario) throws Exception
 	{
-		MyScreenRecorder.startRecording("navigationTest");
+		//MyScreenRecorder.startRecording("navigationTest");
 		i=i+1;
 		this.scenario=scenario;
 		scenarioName=scenario.getName();
@@ -56,7 +53,7 @@ public class Steps_NewCarSearch extends BaseSteps{
 			
 		}
 		ExtentManager.getReporter().flush();
-		MyScreenRecorder.stopRecording();
+		//MyScreenRecorder.stopRecording();
 		quitWebDriver();
 	}
 	

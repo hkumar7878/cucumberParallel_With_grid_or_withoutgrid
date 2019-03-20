@@ -24,4 +24,4 @@ Feature: Validation of Car search page
     Examples: 
       | browserName |
       | chrome      |
-      | firefox     |
+ 
